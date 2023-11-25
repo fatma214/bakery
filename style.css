@@ -1,158 +1,286 @@
-body{
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.86em;
+    
 }
-.div1{
+.container{
+    width: 80%;
+    display: flex;
+}
+.grey-text{
+    color: #686868;
+}
+.light-grey{
+    color: #888;
+}
+.padding-bott20{
+    padding-bottom: 20px;
+}
+
+.padding-rigt50{
+    padding-right: 50px;
+}
+.padding-left40{
+    padding-left: 40px;
+}
+ul{
+    list-style: none;
+}
+.fs22{
+    font-size: 22px;
+}
+.fs24{
+    font-size: 22px;
+}
+.fs30{
+    font-size: 30px;
+}
+.fs76{
+    font-size: 3.3rem;
+}
+ 
+
+nav {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    background-color: #8e7754;
+    
+}
+.nav-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 75%;
+}
+nav .nav-container img{
+    height: 48px;
+}
+nav .nav-container ul{
+    display: flex;
+    list-style: none;
+}
+nav .nav-container ul li{
+    padding: 0.7rem;
+}
+
+
+/* start of home style */
+.home{
     background-image: url(images/drew-coffman-1872.jpg);
     height:100vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding-top: 150px;
+    background-size: cover;
+    background-position: center center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    margin-bottom: 50px;
 }
-h1{
-    font-size: 70px;
+.home .content{
+    width: 45%;
 }
-.div1 p{
-    color: #ccc;
-    font-size: 24px;
+.home .btn{
+    padding: 13px 28px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
 }
-
-.btn-learn-more{
-background-color: #8e7754;
-color: white;
-border:none;
-padding: 15px;
+.home .btn-learn-more{
+    background-color: #8e7754;
+    border: 0;
+    transition: all 0.4s;
 }
-
-.btn-contact-us{
+.home .btn-learn-more:hover{
+    background-color: white;
+    color: black;
+}
+.home .btn-contact-us{
     background-color: transparent;
-    color: white;
-    border: 1px solid white;
-    padding: 15px;
-    margin-left: 7px;
+    border: white 2px solid;
+    transition: all 0.4s;
 }
-.div2{
-    height: 550px;
-    margin-top: 50px;
-}
-.div2 .bg-image{
-background-image: url("images/alexandru-stavrica-170390-800x760.jpg");
-height:100% ;
-width: 40%;
-margin-left:10%;
-float: left;
+.home .btn-contact-us:hover{
+    background-color: white;
+    color: black;
 
 }
-.who-we-are{
-    margin-top: 50px;
-width: 40%;
-margin-left:5%;
-float: left;
-}
-.text-center{
-    text-align: center;
-}
-.div2 p{
-    color: #686868;
-}
-.div3{
-   overflow: hidden;
-    background-color: #f8f8f8;;
-    margin-top: 50px;
-    padding-top: 55px;
-    padding-bottom: 40px;
 
-}
-.our-location{
-    text-align: center;
-    width: 40%;
-    margin-left: 10%;
-    padding-top: 40px;
-    float: left;
-}
-.our-location p{
-    color: #686868; 
-}
-.div3 .bg-image{
-    background-image: url("images/full-2-800x640.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 40%;
-    margin-left:5%;
-    float: left;
+/* who we are section style */
+ 
+.about{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
 }
 
-.div4 p {
-    color: #686868;
+.aboutImg1{
+    width: 50%;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
 }
-.superior-breads,.Bagels,.Cookies{
-    width: 25%;
-    float: left;
-}
-.superior-breads{
-    margin-left: 7.5%;
-}
-.Bagels{
-    margin-left: 5%;
-}
-.Cookies{
-    margin-left: 5%;
-}
-
-.superior-breads img,.Bagels img,.Cookies img{
+.aboutImg1 img{
     width: 100%;
 }
-.clr{
-    clear: both;
+.who-we-are{
+    width: 50%;
+    padding: 50px 0px  50px 50px;
 }
 
-.div5{
-    height: 400px;
-    background-color: #f8f8f8;;
-    margin-top: 50px;
-    padding-top: 55px;
+
+.who-we-are ul li,.contact .container div ul li{
+    padding: 20px 0px;
+}
+
+.who-we-are ul li i {
+    color: #8e7754;
+    padding: 0 10px;
+}
+.contact .container div ul li span{
+    padding-left: 8px;
+}
+.contact .container div ul li i{
+    background-color: #8e7754;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+/*----------------------------------- location section style --------------------*/
+
+.location{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
     padding-bottom: 50px;
 }
-.contact{
-    width: 40%;
-    margin-left: 5%;
-    padding-top: 40px;
-    float: left;
+.location .container .content,.location .container .image{
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
-.map{
-    width: 30%;
-    float: left;
-    padding-left: 5%;
-
-}
-.div6{
-    color: #969696;
-    height: 400px;
-    background-color: #403d38;
-}
-.div6 a{
-    color:#969696;
-    text-decoration: none;
  
+.location .image img{
+    width: 100%;
 }
-.div6 h2{
-    color: white;
+.location .container .content p{
+    margin-bottom: 20px;
 }
-.about{
-    margin-left: 2%;
+.location .container .content {
+    padding-right: 40px;
 }
-.about,.why-special,.opening-hours,.contact-details{
-    float: left;
-    margin-left: 2%;
-    width: 22%;
 
-}
-.footer{
-    height: 250px;
-    background-color: #353330;
+
+/* ourbaking style */
+.ourBaking{
     text-align: center;
-    color: white;
-    padding-top: 5%;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+   
 }
+.bakingContainer{
+    display: flex;
+    justify-content: center;
+}
+.bakingContainer .container div{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.ourBaking .container div img {
+width: 100%;
+}
+.ourBaking .bakingText{
+    padding:40px 0px;
+}
+.ourBaking h3{
+    padding-bottom: 20px;
+}
+
+
+/* contact  style */
+.contact{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+  .contact .container .contactInfo ,.contact .container .frame-div{
+    width: 50%;
+}
+.contact .frame{
+    width: 100%;
+    border: 0;
+    height: 100%;
+}
+
+/* footer*/
+
+.topfooter{
+    background-color: #403d38;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.topfooter .container div{
+    width: 25%;
+    padding-right: 30px;
+}
+.topfooter ul ,footer p{
+    color: #969696;
+}
+.topfooter div h4{
+    color: #fff;
+    padding-bottom: 20px;
+}
+.topfooter .container div ul li{
+   border-bottom: 1px solid rgba(255,255,255,0.05);
+   margin-bottom: 6px;
+   padding-bottom: 7px;
+}
+ 
+
+
+
+/*fbottom*/
+.f-bottom{
+    background-color: #353330;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px;
+}
+.f-bottom .social-icons{
+    display: flex;
+    justify-content: center;
+}
+.f-bottom .social-icons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #484540;
+}
+.f-bottom .social-icons a{
+color:#8c8a86;
+}
+.f-bottom .social-icons a i{
+    font-size: 20px;
+}
+
+
+ 

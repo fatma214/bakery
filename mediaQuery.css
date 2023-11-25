@@ -1,0 +1,71 @@
+
+@media all and (max-width:768px){
+    body{
+        background-color: bisque;
+    }
+    .fs16{
+        font-size: 16px;
+    }
+  .container{
+    
+    display: block;
+  }
+ 
+    nav div ul{
+        visibility: hidden;
+    }
+    /* home */
+    .home .content{
+        width: 100%;
+    }
+    .home h1{
+        font-size: 34px;
+    }
+
+    .aboutImg1,.who-we-are,.location
+     .container .content,
+     .location .container .image,
+     .contact .container .contactInfo,
+     .contact .container .frame-div,.topfooter .container div{
+        width: 100%;
+        padding-left: 0;
+    }
+    .who-we-are{
+        /* margin-bottom: 0; */
+        padding-bottom: 0px;
+    }
+    .contact .container .frame-div{
+        height:70vh;
+    }
+    .location{
+        margin-bottom: 0;
+    }
+    
+     .location .container .image{
+        padding-top: 50px;
+    }
+    .bakingText{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    .bakingContainer .container div h4{
+    padding-top: 28px ;
+    }
+    .ourBaking{
+        margin-bottom: 0px;
+    }
+    .bakingContainer .container div p{
+        padding-bottom: 28px;
+    }
+    .contact .container .contactInfo{
+    margin-bottom:50px;
+    }
+    .who-we-are ul li i{
+        padding-left: 0;
+    }
+    
+}
+ 
+
+ 
