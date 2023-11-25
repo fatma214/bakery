@@ -1,8 +1,6 @@
 
 @media all and (max-width:768px){
-    body{
-        background-color: bisque;
-    }
+
     .fs16{
         font-size: 16px;
     }
